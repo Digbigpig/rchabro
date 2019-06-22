@@ -14,6 +14,6 @@ python:
 install:
   - pip install -r requirements/local.txt
 before_script:
-      - psql -c 'create database {{cookiecutter.project_slug}};' -U postgres
+      - psql -c 'create database rchabro;' -U postgres
 script:
   - "pytest"
