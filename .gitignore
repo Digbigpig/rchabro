@@ -330,5 +330,3 @@ rchabro/media/
 .env
 .envs/*
 !.envs/.local/
-/.envs/.local/.django
-/.envs/.local/.postgres
