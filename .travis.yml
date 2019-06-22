@@ -13,5 +13,7 @@ python:
   - "3.6"
 install:
   - pip install -r requirements/local.txt
+before_script:
+      - psql -c 'create database {{cookiecutter.project_slug}};' -U postgres
 script:
   - "pytest"
