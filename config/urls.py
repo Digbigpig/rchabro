@@ -16,6 +16,7 @@ urlpatterns = [
     path("users/", include("rchabro.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+    path("richard/", TemplateView.as_view(template_name="pages/portfolio.html"), name="portfolio")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
